@@ -6,13 +6,13 @@ On startup, user needs to run
 ```
 sudo ./export_all_gpios.sh
 ```
-to enable GPIOs used in the system and set initial values. GPIOs mapping are found in the script comments
+to enable GPIOs used in the system and set initial values. GPIO mappings are found in the script comments
 
 A few other scripts included, most self-explanatory.
 
 Of note:
 
-```status.py``` is used to read board temperatures and currents of the on-board electronic fuses (efuses), which distribute power to the system.
+```status.py``` is used to read board temperatures and currents of the on-board electronic fuses (efuses), which distribute power to the system. See this file for the ADC pin mappings.
 
 ```fuse.py``` allows the user to manually turn on/off individual efuses. For example: 
 ```python fuse.py fe on``` turns the 2nd stage amps on
